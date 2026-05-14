@@ -705,7 +705,7 @@ const obs=new IntersectionObserver((entries)=>{
   entries.forEach(entry=>{
     if(entry.isIntersecting){
       const cards=entry.target.querySelectorAll('.stat-card-num');
-      const vals=[5,10,3700,2027],suf=['+','+','',''];
+      const vals=[5,10,4325,2027],suf=['+','+','',''];
       cards.forEach((c,i)=>animateNum(c,vals[i],suf[i]));obs.unobserve(entry.target);
     }
   });
